@@ -8,35 +8,73 @@
     <title>DPE / GES</title>
 </head>
 <body>
-    <!-- <input type="range" name="dpe-range" id="dpe-range" min="-6" max="94" onchange="move()"> -->
-    <input type="number" name="dpe-range" id="dpe-range" min="0" max="500" onchange="move()">
-    <div class="contener-dpe">
-        <div class="categorie-dpe">
-            <div class="dpe A">
-                ≤ 50  <span>A</span>
+    <input type="number" name="dpe-range" id="dpe-range" min="0" max="500" onchange="movedpe()">
+    <div>
+        <h2 class="titre-dpe">DPE</h2>
+        <div class="contener">
+            <div class="categorie">
+                <div class="dpe A">
+                    ≤ 50  <span>A</span>
+                </div>
+                <div class="dpe B">
+                    51 à 90  <span>B</span>
+                </div>
+                <div class="dpe C">
+                    91 à 150  <span>C</span>
+                </div>
+                <div class="dpe D">
+                    151 à 230  <span>D</span>
+                </div>
+                <div class="dpe E">
+                    231 à 330  <span>E</span>
+                </div>
+                <div class="dpe F">
+                    331 à 450  <span>F</span>
+                </div>
+                <div class="dpe G">
+                    > 450  <span>G</span>
+                </div>
             </div>
-            <div class="dpe B">
-                51 à 90  <span>B</span>
-            </div>
-            <div class="dpe C">
-                91 à 150  <span>C</span>
-            </div>
-            <div class="dpe D">
-                151 à 230  <span>D</span>
-            </div>
-            <div class="dpe E">
-                231 à 330  <span>E</span>
-            </div>
-            <div class="dpe F">
-                331 à 450  <span>F</span>
-            </div>
-            <div class="dpe G">
-                > 450  <span>G</span>
+            <div class="my-value">
+                <div class="my-value-cursor" id="my-value-cursor-dpe">
+                    <span id="value-line">50</span> <span class="line"></span>
+                </div>
             </div>
         </div>
-        <div class="my-dpe">
-            <div class="my-value" id="my-value">
-                <span id="value-line">250</span> <span class="line"></span>
+    </div>
+
+
+    <input type="number" name="ges-range" id="ges-range" min="0" max="100" onchange="moveges()">
+    <div>
+        <h2 class="titre-dpe">GES</h2>
+        <div class="contener">
+            <div class="categorie">
+                <div class="ges Ag">
+                    ≤ 5  <span>A</span>
+                </div>
+                <div class="ges Bg">
+                    6 à 10  <span>B</span>
+                </div>
+                <div class="ges Cg">
+                    11 à 20 <span>C</span>
+                </div>
+                <div class="ges Dg">
+                    21 à 35  <span>D</span>
+                </div>
+                <div class="ges Eg">
+                    36 à 55  <span>E</span>
+                </div>
+                <div class="ges Fg">
+                    56 à 80  <span>F</span>
+                </div>
+                <div class="ges Gg">
+                    > 80  <span>G</span>
+                </div>
+            </div>
+            <div class="my-value">
+                <div class="my-value-cursor" id="my-value-cursor-ges">
+                    <span id="value-line-ges">5</span> <span class="line"></span>
+                </div>
             </div>
         </div>
     </div>

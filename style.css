@@ -1,15 +1,23 @@
-.contener-dpe {
+/*----------------------- COMMON ---------------------- */
+
+.titre-dpe {
+    text-align: center;
+    margin-bottom: 0px;
+    width: 425px;
+}
+
+.contener {
     display: flex;
     flex-direction: row;
     padding: 20px;
 }
 
-.categorie-dpe {
+.categorie {
     width: 275px;
     border: 1px solid black;
 }
 
-.my-dpe {
+.my-value {
     width: 100px;
     border: 1px solid black;
     border-left: 0px;
@@ -25,7 +33,7 @@
     z-index: -5;
 }
 
-.my-value {
+.my-value-cursor {
     position: relative;
     top: 0px; /* -7% - 93% */
     right: -25px;
@@ -38,7 +46,7 @@
     font-weight: 800;
 }
 
-.my-value::before {
+.my-value-cursor::before {
     right: 100%;
     top: 50%;
     border: solid transparent;
@@ -52,6 +60,8 @@
     border-width: 15px;
     margin-top: -15px;
 }
+
+/*------------------------ DPE ------------------------ */
 
 .dpe {
     position: relative;
@@ -140,4 +150,96 @@
 
 .G::before {
     border-left-color: #FE0000;
+}
+
+
+/*------------------------ GES ------------------------ */
+
+.ges {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 20px;
+    padding: 5px 8px;
+    background-color: #A86598;
+    margin-bottom: 5px;
+}
+  
+.ges::before {
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-left-color: #A86598;
+    border-width: 15px;
+    margin-top: -15px;
+}
+
+.Ag {
+    width: 75px;
+    background-color: #DCC5D9;
+}
+
+.Ag::before {
+    border-left-color: #DCC5D9;
+}
+
+.Bg {
+    width: 100px;
+    background-color: #CDA6C3;
+}
+
+.Bg::before {
+    border-left-color: #CDA6C3;
+}
+
+.Cg {
+    width: 125px;
+    background-color: #BB84AC;
+}
+
+.Cg::before {
+    border-left-color: #BB84AC;
+}
+
+.Dg {
+    width: 150px;
+    background-color: #A86598;
+}
+
+.Dg::before {
+    border-left-color: #A86598;
+}
+
+.Eg {
+    width: 175px;
+    background-color: #95417F;
+}
+
+.Eg::before {
+    border-left-color: #95417F;
+}
+
+.Fg {
+    width: 200px;
+    background-color: #7F2469;
+}
+
+.Fg::before {
+    border-left-color: #7F2469;
+}
+
+.Gg {
+    width: 225px;
+    margin-bottom: 0px;
+    background-color: #7F2469;
+}
+
+.Gg::before {
+    border-left-color: #7F2469;
 }
